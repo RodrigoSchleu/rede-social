@@ -6,7 +6,7 @@ Atividade da matéria de Programação Web do SENAI CIMATEC, solicitada pela pro
 * Framework: Bootstrap
 * Data de Entrega: 11/11/2021
 
-<img src="img/login.png">
-<img src="img/cadastro.png">
+<img src="../img/login.png">
+<img src="../img/cadastro.png">
 
 > Clique aqui para ir até o site.
