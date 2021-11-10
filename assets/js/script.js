@@ -2,6 +2,7 @@ $(function () {
     $('[data-toggle="popover"]').popover();
   })
 
+
 function validaNome(){
     let input = document.getElementById('inputName');
     let valid = document.getElementById('valid-nome');
@@ -22,7 +23,7 @@ function validaEmail(){
     let input = document.getElementById('inputEmail');
     let valid = document.getElementById('valid-email');
     let valor = input.value;
-    let padrao = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+\.([a-z]+)?$/i;
+    let padrao = /\S+@\S+\.\S+/;
     if(valor.match(padrao)){
         input.className = "form-control is-valid";
         valid.className = "valid-feedback";
@@ -72,10 +73,11 @@ function confirmaSenha(){
         }
     }
 }
-function validaPolitica(){
+function validaCadastro(){
+    validaEmail();validaNome();validaSenha();confirmaSenha();
     let input = document.getElementById('gridCheck');
     let valid = document.getElementById('valid-checkbox');
-    if(input.checked){
+    if(input.checked ){
         input.className = "form-check-input is-valid";
         valid.className = "valid-feedback";
         valid.innerHTML = "Tudo Certo!"
@@ -84,4 +86,5 @@ function validaPolitica(){
         valid.className = "invalid-feedback";
         valid.innerHTML = "Você deve concordar, antes de continuar."
     }
+    
 }

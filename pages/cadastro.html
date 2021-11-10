@@ -42,12 +42,12 @@
                             <div class="form-row">
                                 <div class="form-group col-md-6">
                                     <label for="inputPassword1">Senha</label>
-                                    <input type="password" class="form-control" id="inputPassword1" placeholder="Digite o sua senha" onblur="validaSenha();confirmaSenha()">
+                                    <input type="password" class="form-control" id="inputPassword1" placeholder="Digite o sua senha" oninput="validaSenha();confirmaSenha()">
                                     <div id="valid-senha1"></div>
                                 </div>
                                 <div class="form-group col-md-6">
                                   <label for="inputPassword2">Confirmar senha</label>
-                                  <input type="password" class="form-control" id="inputPassword2" placeholder="Confirmar senha"  onblur="confirmaSenha()">
+                                  <input type="password" class="form-control" id="inputPassword2" placeholder="Confirmar senha"  oninput="validaSenha();confirmaSenha()">
                                   <div id="valid-senha2"></div>
                                 </div>
                               </div>
@@ -79,13 +79,45 @@
                                 </div>
                               </div>
                             </div>
-                            <button type="button" class="btn btn-primary btn-block" onclick="validaPolitica();validaEmail();validaNome();validaSenha();confirmaSenha()">Finalizar cadastro</button>
+                            <button type="button" class="btn btn-primary btn-block" onclick="validaCadastro()">Finalizar cadastro</button>
+                            <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="meuModal">
+                                <div class="modal-dialog modal-sm">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">Cadastro concluído!</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                          <span aria-hidden="true">&times;</span>
+                                        </button>
+                                      </div>
+                                      <div class="modal-body">
+                                        Parabens! Você completou o seu cadastro no site.
+                                      </div>
+                                  </div>
+                                </div>
+                              </div>
                           </form>
                     </div>
                 </div>
+                <ul class="list-group" style="margin-top: 1em;">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Cras alemanha odio
+                      <span class="badge badge-primary badge-pill">7</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Dapibus ac facilisis in
+                      <span class="badge badge-primary badge-pill">x</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Morbi brasil risus
+                      <span class="badge badge-primary badge-pill">1</span>
+                    </li>
+                  </ul>
             </div>
             <div class="col-4">
-                <div class="accordion" id="accordionExample">
+                <div class="list-group">
+                    <a href="/index.html" class="list-group-item list-group-item-action">Voltar a página incial</a>
+                  </div>
+                <div class="accordion" id="accordionExample" style="margin-top: 1em;">
                     <div class="card">
                       <div class="card-header" id="headingOne">
                         <h5 class="mb-0">
@@ -97,7 +129,7 @@
                   
                       <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                         <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non alemanha 0 x 2 coreia do sul cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table.
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non alemanha 0 x 2 coreia do sul cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
                         </div>
                       </div>
                     </div>
@@ -111,7 +143,7 @@
                       </div>
                       <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                         <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non alemanha 0 x 2 coreia do sul cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
                         </div>
                       </div>
                     </div>
@@ -125,7 +157,7 @@
                       </div>
                       <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                         <div class="card-body">
-                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non alemanha 0 x 2 coreia do sul cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica.
                         </div>
                       </div>
                     </div>
