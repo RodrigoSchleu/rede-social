@@ -9,4 +9,4 @@ Atividade da matéria de Programação Web do SENAI CIMATEC, solicitada pela pro
 <img src="image/login.png">
 <img src="image/cadastro.png">
 
-> Clique aqui para ir até o site.
+> Imagem do site
