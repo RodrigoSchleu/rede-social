@@ -36,6 +36,7 @@ button, input {
 }
 body {
     background-color: var(--background);
+    text-align: justify;
 }
 
 /* Definindo o estilo */
